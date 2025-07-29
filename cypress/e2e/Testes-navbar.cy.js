@@ -1,5 +1,5 @@
 describe("Testar os componentes da barra de navegação", () => {
-  it("teste menu hamburguer", () => {
+  it("teste menu hamburguer, de abrir o menu e mostrar mais opções", () => {
     cy.visit("");
     cy.get(".elementor-element-7cbf67a > .elementor-widget-container").click();
     cy.get(".elementor-element-17e177b7 > .e-con-inner").should("be.visible");
