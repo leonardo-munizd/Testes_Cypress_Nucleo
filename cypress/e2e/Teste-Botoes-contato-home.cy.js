@@ -3,9 +3,6 @@ describe("Testes dos botões do site", () => {
     cy.visit("");
     cy.get(
       ".elementor-element-36e7664 > .elementor-element > .elementor-widget-container > .elementor-button-wrapper > .elementor-button"
-    ).click();
-    cy.get(
-      ".elementor-element-36e7664 > .elementor-element > .elementor-widget-container > .elementor-button-wrapper > .elementor-button"
     ).should(
       "have.attr",
       "href",
@@ -13,7 +10,7 @@ describe("Testes dos botões do site", () => {
     );
   });
 
-  it("Ao clicar no botão whatsapp, deve redirecionar para o contato do whatsapp", () => {
+  it("Ao clicar no botão whatsapp, abre aba para mandar mensagem", () => {
     cy.visit("");
     cy.get(".joinchat__button").click();
     cy.get(".joinchat__open").click();
@@ -22,9 +19,6 @@ describe("Testes dos botões do site", () => {
 
   it("Ao clicar no terceiro botão, deve redirecionar para o contato do whatsapp ", () => {
     cy.visit("");
-    cy.get(
-      ".elementor-element-36e7664 > .elementor-element > .elementor-widget-container > .elementor-button-wrapper > .elementor-button"
-    ).click();
     cy.get(
       ".elementor-element-36e7664 > .elementor-element > .elementor-widget-container > .elementor-button-wrapper > .elementor-button"
     ).should(
